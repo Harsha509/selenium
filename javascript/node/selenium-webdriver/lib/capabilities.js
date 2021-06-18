@@ -263,7 +263,7 @@ class Capabilities {
    * @return {!Capabilities} A basic set of capabilities for Firefox.
    */
   static firefox() {
-    return new Capabilities().setBrowserName(Browser.FIREFOX).set("moz:debuggerAddress", true)
+    return new Capabilities().setBrowserName(Browser.FIREFOX)
   }
 
   /**

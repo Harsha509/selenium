@@ -394,6 +394,15 @@ class Options extends Capabilities {
     }
     throw TypeError('binary must be a string path or Channel object')
   }
+
+  /**
+   * Enables debugger address for firefox used for CDP
+   *
+   * @return {!Capabilities} A self reference.
+   */
+  enableDebuggerAddress() {
+    return this.set('moz:debuggerAddress', true)
+  }
 }
 
 /**
